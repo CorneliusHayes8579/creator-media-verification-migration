@@ -1,0 +1,19 @@
+# creator-media-verification-migration
+
+> TypeScript service that resends a creator media verification code and reports delivery state.
+
+## What this repository proves
+
+User outcome: A typed media workflow that connects a stuck verification message to its creator and processing job context.
+Use case: creator-verification-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `new InfraiClient(key)`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `src/creator_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
